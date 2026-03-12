@@ -1,20 +1,40 @@
-h4{
-    /* color: chartreuse; */
-    font-size: 25px;
-    /* text-align: center; */
+input[type="text"] {
+  border: 2px solid red;
 }
 
-#firstparagraph{
-    font-size: 31px;
+/* ul > li {
+  color: blueviolet;
+} */
+
+
+.parent > p {
+    color: red;
 }
 
-.secondparagraph{
-    font-size: 18px;
+
+h1 + p {
+  background-color: rgb(103, 204, 235);
 }
 
-*{
-    border: 1px solid rgb(7, 0, 0);
+a:hover {
+  color: chartreuse;
 }
-p,h4{
-  color: rgba(0, 0, 0, 0.822);
+
+li:nth-child(2) {
+  background-color: yellow;
+}
+div:not(.class1) {
+  border: 2px dashed red;
+}
+.decorated::before {
+  content: "STAR🌴";
+  color: blue;
+}
+.decorated::after {
+  content: "🤑";
+  color: blue;
+}
+p::first-letter {
+  font-size: 32px;
+  color: greenyellow;
 }
