@@ -3,68 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Typography</title>
+    <title>Container</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <style>
+      .border {
+        border-width: 10px !important; /* make border very thick */
+      }
+      /* 
+ bg-primary → light blue background
+
+bg-success → light green background
+
+bg-danger → light red background
+
+bg-dark → black background
+
+text-white, text-dark, etc. → change text color */
+    </style>
   </head>
   <body>
-    <div class="container">
-      <h1 style="color: red" class="text-center">heading list</h1>
-      <h1 class="display-1">Codingal</h1>
-      <h1 class="display-2">Codingal</h1>
-      <h1 class="display-3">Codingal</h1>
-      <h1 class="display-4">Codingal</h1>
+    <div class="container bg-primary text-white border border-danger">
+      <h2>container (fixed width)</h2>
+      <p>This box stays in the middle, with empty space on the sides.</p>
     </div>
-    <div class="container" style="color: blueviolet">
-      <h1>Bellow is small tag and class is text-muted</h1>
-      <small>hii , how are you</small>
-      <h4>dl in bootstrap</h4>
-      <dl>
-        <dt>Coffee</dt>
-        <dd>cold coffee</dd>
-        <dt>tea</dt>
-        <dd>i love red tea</dd>
-      </dl>
-    </div>
-
-    <div class="container">
-      <p>co<sub>2</sub></p>
-      <p>a<sup>2</sup></p>
-      <p>hello <mark >Student</mark></p>
-      <p>
-        i love <code>icecream</code> ,<code>chocolate shake</code>,
-        <code>egg roll</code>
-      </p>
-      <p>hello, i am <span> 18</span> years old</p>
-    </div>
-
-  
-
-    <div class="container">
-      <p><abbr title="codingal">cdgl</abbr> was founded in 2020</p>
-      <h1>Blockquotes</h1>
-      <p>It is used to present content from another source:</p>
-
-      <blockquote class="blockquote">
-        <p>Codingal is on a mission to inspire all the school kids.</p>
-        <footer class="blockquote-footer">From Codingal</footer>
-      </blockquote>
-      <h3>pre use for multiple code lines</h3>
-      <pre>
-        my favourite desserts are:
-        chocolate,icecream
-    
-        rasmalai
-      </pre>
-      <pre>
-        my favourite places are :
-        odisha
-        punjab
-        gujurat
-      </pre>
-  
+    <div class="container-fluid bg-success text-white">
+      <h2>container-fluid (full width)</h2>
+      <p>This box always stretches across the whole screen.</p>
     </div>
   </body>
 </html>
